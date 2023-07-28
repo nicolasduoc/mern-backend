@@ -1,0 +1,24 @@
+
+@api= http://localhost:3000
+### LISTAR TODOS LOS LIBROS
+GET {{api}}/libros
+### LISTAR UN LIBRO
+GET {{api}}/libros/64beac66350d9d0be4f591b7
+### CREAR UN LIBRO
+POST {{api}}/libros
+Content-Type: application/json
+
+{
+  "titulo": "la biblia",
+  "descripcion": "el libro sagrado del señor",
+  "autor": "chespirito"
+}
+### ACTUALIZAR UN LIBRO
+PUT {{api}}/libros/64beac66350d9d0be4f591b7
+Content-Type: application/json
+
+{
+  "titulo": "The 48 laws of power" 
+}
+### ELIMINAR UN LIBRO
+DELETE {{api}}/libros/64beacd1350d9d0be4f591b9
